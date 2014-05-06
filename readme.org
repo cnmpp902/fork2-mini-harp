@@ -11,9 +11,9 @@
   + [[http://code.tutsplus.com/tutorials/meet-the-connect-framework--net-31220][Meet the Connect Framework]]
   + how to use =connect= to add a =middleware=
 ** read relative part in =深入浅出 node.js=
-** figure out the http protocol with compute network lesson studying now
+** http protocol
   + what is =Transfer-Encoding: chunked=
-
+  + HTTP 303 status && Location Header 
 ** Use minimist
    + see warm Lesson1 
 ** =--save-dev= and =--save=
@@ -48,7 +48,6 @@ var a = b || true; //are you kidding?
   - and then you can use =Object.pathname=
   - =url.format=
 
-+ HTTP 303 status && Location Header
   - [[http://en.wikipedia.org/wiki/HTTP_303][wiki link]]
 
 + require 'send'
@@ -60,6 +59,4 @@ var a = b || true; //are you kidding?
 + =escape()=
   - to replace some words to other words...
 
-
-* TODO recover and fill blank above.
 
