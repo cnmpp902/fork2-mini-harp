@@ -10,12 +10,10 @@
 ** [[http://www.senchalabs.org/connect/][connect]]
   + [[http://code.tutsplus.com/tutorials/meet-the-connect-framework--net-31220][Meet the Connect Framework]]
   + how to use =connect= to add a =middleware=
-** read relative part in =深入浅出 node.js=
 ** http protocol
   + what is =Transfer-Encoding: chunked=
   + HTTP 303 status && Location Header 
-** Use minimist
-   + see warm Lesson1 
+   -in server-static: to modify pathname and redirect to it.
 ** =--save-dev= and =--save=
 #+BEGIN_QUOTE
 --save: Package will appear in your dependencies.
@@ -23,7 +21,7 @@
 #+END_QUOTE
 + [[https://www.npmjs.org/doc/cli/npm-install.html][npm install document]]
 
-** read [[https://github.com/expressjs/serve-static/blob/e7c792749fd2e3f482a5963f43c4a05d42e4863e/index.js#L17-L42][server-static]]
+** [[https://github.com/expressjs/serve-static/blob/e7c792749fd2e3f482a5963f43c4a05d42e4863e/index.js#L17-L42][server-static]]
 + ~!==~ vs ~||~
 #+BEGIN_SRC js
 /* version !==:
@@ -53,9 +51,10 @@ var a = b || true; //are you kidding?
 + require 'send'
 
 + =next=, =next()=
+  - next(err)
 
 + =exports.mime=
-
+  - provide MIME type : to deal with non ASIC2 docutment.
 + =escape()=
   - to replace some words to other words...
 

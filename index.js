@@ -15,6 +15,7 @@ module.exports = function(path){
     }
     else{
       res.end("Cannot Get "+req.url.substr(req.url.indexOf('/')));
+      //next()
     }
   });
   return app;
