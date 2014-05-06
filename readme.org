@@ -48,9 +48,8 @@ var a = b || true; //are you kidding?
   - and then you can use =Object.pathname=
   - =url.format=
 
-+ 303 status
-
-+ Location Header
++ HTTP 303 status && Location Header
+  - [[http://en.wikipedia.org/wiki/HTTP_303][wiki link]]
 
 + require 'send'
 
