@@ -11,7 +11,7 @@
   + [[http://code.tutsplus.com/tutorials/meet-the-connect-framework--net-31220][Meet the Connect Framework]]
   + how to use =connect= to add a =middleware=
 ** http protocol
-  + what is =Transfer-Encoding: chunked=
+  + =Transfer-Encoding: chunked=
   + HTTP 303 status && Location Header 
      - [[http://en.wikipedia.org/wiki/HTTP_303][wiki link]]
      - in server-static: to modify pathname and redirect to it.

@@ -3,8 +3,6 @@ var connect = require('connect'),
 
 module.exports = function(path){
   var app = connect();
-  // why it should move to be in front of use function...?
-  // because if not it will be filted by else..
   if(path !== undefined){
     app.use(serveStatic(path));
   }
@@ -16,6 +14,9 @@ module.exports = function(path){
     else{
       //res.end("Cannot Get "+req.url.substr(req.url.indexOf('/')));
       next();
+
+      // if we not use next(), then if we write .use below, it will be useless.
+      // it will stuck in else
     }
   });
   return app;
