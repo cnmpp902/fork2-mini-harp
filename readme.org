@@ -1,0 +1,66 @@
+* Lesson 1 - Mini Harp Static Server
+** concept
+   + factory function  
+   + middleware
+   + http server
+
+** [[http://harpjs.com][harp]]
++ what's harp 
++ how to use it 
+** [[http://www.senchalabs.org/connect/][connect]]
+  + [[http://code.tutsplus.com/tutorials/meet-the-connect-framework--net-31220][Meet the Connect Framework]]
+  + how to use =connect= to add a =middleware=
+** read relative part in =深入浅出 node.js=
+** figure out the http protocol with compute network lesson studying now
+  + what is =Transfer-Encoding: chunked=
+
+** Use minimist
+   + see warm Lesson1 
+** =--save-dev= and =--save=
+#+BEGIN_QUOTE
+--save: Package will appear in your dependencies.
+--save-dev: Package will appear in your devDependencies.
+#+END_QUOTE
++ [[https://www.npmjs.org/doc/cli/npm-install.html][npm install document]]
+
+** read [[https://github.com/expressjs/serve-static/blob/e7c792749fd2e3f482a5963f43c4a05d42e4863e/index.js#L17-L42][server-static]]
++ ~!==~ vs ~||~
+#+BEGIN_SRC js
+/* version !==:
+  only b = flase then  a = flase, else a = true, so defalut is true;
+  and the most important you only have choice of true or flase;
+  it is very useful if you are setting a boolean value in options.
+*/
+var a = false !== b;
+var a = true !== b; //defalut is false;
+/* version ||
+ flase:  b = undefined or 0 or null or false then a = flase  else a = b , defalut is false,
+ this mothod can not solve defalut is true.
+*/
+var a = b || false;
+var a = b || true; //are you kidding?
+#+END_SRC
+
++ support =GET= , =HEAD=
+
++ require 'url'
+  - =url.parse= to get a url object?
+  - and then you can use =Object.pathname=
+  - =url.format=
+
++ 303 status
+
++ Location Header
+
++ require 'send'
+
++ =next=, =next()=
+
++ =exports.mime=
+
++ =escape()=
+  - to replace some words to other words...
+
+
+* TODO recover and fill blank above.
+
