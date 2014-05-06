@@ -13,10 +13,12 @@
 ** http protocol
   + what is =Transfer-Encoding: chunked=
   + HTTP 303 status && Location Header 
-   -in server-static: to modify pathname and redirect to it.
+     - [[http://en.wikipedia.org/wiki/HTTP_303][wiki link]]
+     - in server-static: to modify pathname and redirect to it.
 ** =--save-dev= and =--save=
 #+BEGIN_QUOTE
 --save: Package will appear in your dependencies.
+
 --save-dev: Package will appear in your devDependencies.
 #+END_QUOTE
 + [[https://www.npmjs.org/doc/cli/npm-install.html][npm install document]]
@@ -45,8 +47,6 @@ var a = b || true; //are you kidding?
   - =url.parse= to get a url object?
   - and then you can use =Object.pathname=
   - =url.format=
-
-  - [[http://en.wikipedia.org/wiki/HTTP_303][wiki link]]
 
 + require 'send'
 

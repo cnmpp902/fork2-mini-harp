@@ -11,11 +11,11 @@ module.exports = function(path){
   app.use(function(req,res,next){
     var url = req.url.split("/");
     if(url[1] == "current-time" && url[2] === undefined){
-      res.end((new Date()).toISOString());
+      res.end((new Date()).toISOString()+"\n");
     }
     else{
-      res.end("Cannot Get "+req.url.substr(req.url.indexOf('/')));
-      //next()
+      //res.end("Cannot Get "+req.url.substr(req.url.indexOf('/')));
+      next();
     }
   });
   return app;
