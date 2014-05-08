@@ -63,7 +63,7 @@ var a = b || true; //are you kidding?
 * Lesson 2 - Mini Harp Preprocessors
 ** question
 1. fs.readFile里面的 data 无法传出去?
-  
+  傻逼！回调会在你后面赋值之后才执行啊！
 2. 不指名statuscode的话是如何返回状态码的?
 
 ** jade&&less
