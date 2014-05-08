@@ -59,3 +59,19 @@ var a = b || true; //are you kidding?
   - to replace some words to other words...
 
 
+
+* Lesson 2 - Mini Harp Preprocessors
+** question
+1. fs.readFile里面的 data 无法传出去?
+  
+2. 不指名statuscode的话是如何返回状态码的?
+
+** jade&&less
+
+** [[http://en.wikipedia.org/wiki/Chunked_transfer_encoding][Chunked transfer encoding]]
+   + how it run?
+   + why not use it ?
+     
+** HTTP Content-type
+ - [[http://tool.oschina.net/commons][wiki]]
+ - [[http://en.wikipedia.org/wiki/Internet_media_type][mime type]]
